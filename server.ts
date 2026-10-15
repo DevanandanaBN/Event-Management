@@ -168,7 +168,7 @@ app.post('/api/events', async (req: Request, res: Response) => {
       registeredCount: 0,
       ticketPrice: Number(ticketPrice) || 0,
       status: 'upcoming',
-      image: image || '/src/assets/images/hero_event_summit_1791908450453.jpg',
+      image: image || '/images/hero_event_summit_1791908450453.jpg',
       organizer: organizer || 'EventSphere Community',
       tags: Array.isArray(tags) ? tags : typeof tags === 'string' ? tags.split(',').map((t: string) => t.trim()).filter(Boolean) : [],
       createdAt: new Date().toISOString(),

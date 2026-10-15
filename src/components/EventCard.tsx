@@ -33,7 +33,7 @@ export const EventCard: React.FC<EventCardProps> = ({
       <div className="relative aspect-video w-full bg-neutral-100 overflow-hidden">
         {!imageError ? (
           <img
-            src={event.image}
+            src={event.image?.replace('/src/assets/images/', '/images/')}
             alt={event.title}
             referrerPolicy="no-referrer"
             onError={() => setImageError(true)}
