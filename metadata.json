@@ -1,0 +1,6 @@
+{
+  "name": "EventSphere - Event Management & Participant Registration System",
+  "description": "Modern full-stack event management web application powered by Node.js, Express, and MongoDB. Features event discovery, online participant registration, digital tickets, admin event CRUD, and participant tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
