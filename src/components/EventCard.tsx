@@ -44,10 +44,10 @@ export const EventCard: React.FC<EventCardProps> = ({
     year: 'numeric',
   });
 
-  const imageSrc = event.image?.replace(
-    /^\/?src\/assets\/images\//,
-    '/images/'
-  );
+ const imageSrc = event.image?.replace(
+  /^\/?src\/assets\/images\//,
+  '/images/'
+);
 
   return (
     <article className="group bg-white rounded-xl border border-neutral-200 overflow-hidden flex flex-col transition-all duration-200 hover:shadow-md hover:border-neutral-300">
