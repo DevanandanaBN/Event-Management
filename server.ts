@@ -101,7 +101,7 @@ app.post('/api/auth/login', async (req: Request, res: Response) => {
   }
 });
 
-// 3. Events Endpoints
+/// 3. Events Endpoints
 app.get('/api/events', async (req: Request, res: Response) => {
   try {
     const category = req.query.category as string | undefined;
@@ -109,7 +109,18 @@ app.get('/api/events', async (req: Request, res: Response) => {
     const search = req.query.search as string | undefined;
 
     const events = await db.events.find({ category, status, search });
-    res.json(events);
+
+    const normalizedEvents = events.map((event: any) => ({
+      ...event,
+      image: event.image
+        ? event.image.replace(
+            /^\/?src\/assets\/images\//,
+            '/images/'
+          )
+        : '/images/hero_event_summit_1791908450453.jpg',
+    }));
+
+    res.json(normalizedEvents);
   } catch (err: any) {
     res.status(500).json({ error: err.message });
   }
