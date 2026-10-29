@@ -179,13 +179,6 @@ export default function App() {
 
                 {/* Quick MongoDB Status & Action */}
                 <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => setShowDbInspector(true)}
-                    className="flex items-center gap-1.5 text-xs text-neutral-600 bg-white border border-neutral-200 px-3 py-1.5 rounded-lg hover:border-neutral-300 transition-colors"
-                  >
-                    <Database className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>MongoDB Database: Active</span>
-                  </button>
                   {currentUser?.role === 'admin' && (
                     <button
                       onClick={() => setActiveView('admin-events')}
