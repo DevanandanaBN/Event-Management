@@ -79,14 +79,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span>Admin Portal</span>
           </button>
 
-          <button
-            onClick={onOpenDbInspector}
-            className="whitespace-nowrap flex items-center gap-1.5 text-neutral-600 hover:text-neutral-900 transition-colors"
-            title="Inspect MongoDB Documents & Technology Stack"
-          >
-            <Database className="w-3.5 h-3.5 text-emerald-600" />
-            <span>MongoDB Stack</span>
-          </button>
         </nav>
 
         {/* Zone 3: 1 Primary Action Area */}

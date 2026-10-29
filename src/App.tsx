@@ -395,17 +395,7 @@ export default function App() {
             <span>· Enterprise Event Management Platform</span>
           </div>
 
-          <div className="flex items-center gap-4 text-xs">
-            <button
-              onClick={() => setShowDbInspector(true)}
-              className="text-neutral-700 hover:text-neutral-900 font-mono flex items-center gap-1"
-            >
-              <Database className="w-3.5 h-3.5 text-emerald-600" />
-              <span>MongoDB Document Architecture</span>
-            </button>
-            <span aria-hidden="true">·</span>
-            <span>Node.js & Express.js REST API</span>
-          </div>
+          
         </div>
       </footer>
 
