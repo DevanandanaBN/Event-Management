@@ -1,4 +1,9 @@
-import express, { Request, Response } from 'express';
+
+import dns from 'node:dns';
+// Fix DNS resolution for MongoDB Atlas
+dns.setServers(['8.8.8.8', '1.1.1.1']);import express, { Request, Response } from 'express';
+
+
 import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
